@@ -17,3 +17,5 @@ function main() {
 
 }
 window.onload = () => main()
+
+// https://github.com/webtorrent/webtorrent/issues/2206
