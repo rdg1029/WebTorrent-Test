@@ -60,7 +60,10 @@ module.exports = {
             // favicon: './public/favicon.png',
         }),
         new CleanWebpackPlugin(),
-        new NodePolyfillPlugin(),
+        new NodePolyfillPlugin({
+            // https://www.npmjs.com/package/node-polyfill-webpack-plugin
+            additionalAliases: ['process', 'punycode'],
+        }),
         new webpack.DefinePlugin({
             global: 'globalThis'
         })
