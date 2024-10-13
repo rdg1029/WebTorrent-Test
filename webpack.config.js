@@ -64,5 +64,12 @@ module.exports = {
         new webpack.DefinePlugin({
             global: 'globalThis'
         })
-    ]
+    ],
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "./public"),
+        },
+        compress: true,
+        port: process.env.PORT,
+    }
 };
