@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@types/webtorrent": "^0.109.8",
+    "webrtc-adapter": "^9.0.1",
     "webtorrent": "^2.2.1"
   }
 }
